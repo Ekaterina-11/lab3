@@ -16,4 +16,4 @@ public:
     virtual void print()const = 0;
 };
 
-#endif // MEBEL_H_INCLUDED
+#endif
