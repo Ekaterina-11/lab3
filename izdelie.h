@@ -26,4 +26,4 @@ public:
     virtual void print()const = 0;
 };
 
-#endif // IZDELIE_H_INCLUDED
+#endif
