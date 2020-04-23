@@ -13,4 +13,4 @@ public:
     void print() const;
 };
 
-#endif // SHKAF_H_INCLUDED
+#endif
