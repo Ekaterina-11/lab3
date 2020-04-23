@@ -12,92 +12,91 @@ using namespace std;
 int main()
 {
     string name_, color_, material_, pokritie_;
-    int polki_, size_, kolsec_, vibor;
+    int shelf_, size_, sections_, vybor;
 
-    //a:
-    cout << "Vvedite 1, chtobi vvesti dannie shkafa;" << endl;
-    cout << "Vvedite 2, chtobi vvesti dannie stellaga;" << endl;
-    cout << "Vvedite 3, chtobi vvesti dannie stola;" << endl;
-    cout << "Vvedite 4, chtobi vvesti dannie divana;" << endl;
-    cout << "Vvedite 5, zavershit` rabotu programmi." << endl;
 
-    cout <<"Vvodite: ";
-    cin >> vibor;
+    cout << "Enter 1, to enter data shkafa;" << endl;
+    cout << "Enter 2, to enter data stellaga;" << endl;
+    cout << "Enter 3, to enter data stola;" << endl;
+    cout << "Enter 4, to enter data divana;" << endl;
+
+
+    cout <<"Enter: ";
+    cin >> vybor;
     cout << endl;
-    if ((vibor>=6)||(vibor<=0)){
-    cout << "Please, vvedite chislo ot 1 do 5!"<< endl<<endl;
-    //goto a;
+    if ((vybor>=5)||(vybor<=0)){
+    cout << "Enter chislo ot 1 do 5!"<< endl<<endl;
+
     }
     cout << endl;
 
-    switch (vibor){
+    switch (vybor){
     case 1:{
-    cout << "Vi vibrali shkaf." << endl;
-    cout << "Vvedite nazvanie shkafa: ";
+    cout << "You vybor shkaf." << endl;
+    cout << "Enter name shkafa: ";
     cin >> name_;
-    cout << "Vvedite razmer shkafa: ";
+    cout << "Enter size shkafa: ";
     cin >> size_;
-    cout << "Vvedite cvet shkafa: ";
+    cout << "Enter color shkafa: ";
     cin >> color_;
-    cout << "Vvedite material shkafa: ";
+    cout << "Enter material shkafa: ";
     cin >> material_;
-    cout << "Vvedite kolicvestvo polok shkafa: ";
-    cin >> polki_;
+    cout << "Enter number of shelves shkafa: ";
+    cin >> shelf_;
     cout << endl;
 
-    shkaf s(name_, size_, color_, material_, polki_);
+    shkaf s(name_, size_, color_, material_, shelf_);
     s.print();
     cout << endl;
 
-    cout << "Vvedite 1, chtobi vvesti dannie shkafa;" << endl;
-    cout << "Vvedite 2, chtobi vvesti dannie stellaga;" << endl;
-    cout << "Vvedite 3, chtobi vvesti dannie stola;" << endl;
-    cout << "Vvedite 4, chtobi vvesti dannie divana;" << endl;
-    cout << "Vvedite 5, zavershit` rabotu programmi." << endl;
+     cout << "Enter 1, to enter data shkafa;" << endl;
+    cout << "Enter 2, to enter data stellaga;" << endl;
+    cout << "Enter 3, to enter data stola;" << endl;
+    cout << "Enter 4, to enter data divana;" << endl;
 
-    cout <<"Vvodite: ";
-    cin >> vibor;
+    cout <<"Enter: ";
+    cin >> vybor;
     cout << endl;
-    //goto a;
+
 }
     case 2:{
-    cout << "Vi vibrali stellage." << endl;
-    cout << "Vvedite nazvanie stellaga: ";
+    cout << "You vybor stellage." << endl;
+    cout << "Enter name stellaga: ";
     cin >> name_;
-    cout << "Vvedite razmer stellaga: ";
+    cout << "Enter size stellaga: ";
     cin >> size_;
-    cout << "Vvedite cvet stellaga: ";
+    cout << "Enter color stellaga: ";
     cin >> color_;
-    cout << "Vvedite material stellaga: ";
+    cout << "Enter material stellaga: ";
     cin >> material_;
-    cout << "Vvedite kolicvestvo sekciy stellaga: ";
-    cin >> kolsec_;
+    cout << "Enter number of sections stellaga: ";
+    cin >> sections_;
     cout << endl;
 
-    stellage stel(name_, size_, color_, material_, kolsec_);
+    stellage stel(name_, size_, color_, material_, sections_);
     stel.print();
     cout << endl;
 
-    cout << "Vvedite 1, chtobi vvesti dannie shkafa;" << endl;
-    cout << "Vvedite 2, chtobi vvesti dannie stellaga;" << endl;
-    cout << "Vvedite 3, chtobi vvesti dannie stola;" << endl;
-    cout << "Vvedite 4, chtobi vvesti dannie divana;" << endl;
-    cout << "Vvedite 5, zavershit` rabotu programmi." << endl;
+    cout << "Enter 1, to enter data shkafa;" << endl;
+    cout << "Enter 2, to enter data stellaga;" << endl;
+    cout << "Enter 3, to enter data stola;" << endl;
+    cout << "Enter 4, to enter data divana;" << endl;
 
-    cout <<"Vvodite: ";
-    cin >> vibor;
+
+    cout <<"Enter: ";
+    cin >> vybor;
     cout << endl;
-    //goto a;
+
 }
     case 3:{
-    cout << "Vi vibrali stol." << endl;
-    cout << "Vvedite nazvanie stola: ";
+    cout << "You vybor stol." << endl;
+    cout << "Enter name stola: ";
     cin >> name_;
-    cout << "Vvedite razmer stola: ";
+    cout << "Enter size stola: ";
     cin >> size_;
-    cout << "Vvedite cvet stola: ";
+    cout << "Enter color stola: ";
     cin >> color_;
-    cout << "Vvedite material stola: ";
+    cout << "Enter material stola: ";
     cin >> material_;
     cout << endl;
 
@@ -105,28 +104,28 @@ int main()
     st.print();
     cout << endl;
 
-    cout << "Vvedite 1, chtobi vvesti dannie shkafa;" << endl;
-    cout << "Vvedite 2, chtobi vvesti dannie stellaga;" << endl;
-    cout << "Vvedite 3, chtobi vvesti dannie stola;" << endl;
-    cout << "Vvedite 4, chtobi vvesti dannie divana;" << endl;
-    cout << "Vvedite 5, zavershit` rabotu programmi." << endl;
+    cout << "Enter 1, to enter data shkafa;" << endl;
+    cout << "Enter 2, to enter data stellaga;" << endl;
+    cout << "Enter 3, to enter data stola;" << endl;
+    cout << "Enter 4, to enter data divana;" << endl;
 
-    cout <<"Vvodite: ";
-    cin >> vibor;
+
+    cout <<"Enter: ";
+    cin >> vybor;
     cout << endl;
-    //goto a;
+
 }
     case 4:{
-    cout << "Vi vibrali divan." << endl;
-    cout << "Vvedite nazvanie divana: ";
+    cout << "You vybor divan." << endl;
+    cout << "Enter name divana: ";
     cin >> name_;
-    cout << "Vvedite razmer divana: ";
+    cout << "Enter size divana: ";
     cin >> size_;
-    cout << "Vvedite cvet divana: ";
+    cout << "Enter color divana: ";
     cin >> color_;
-    cout << "Vvedite material divana: ";
+    cout << "Enter material divana: ";
     cin >> material_;
-    cout << "Vvedite pokritie divana: ";
+    cout << "Enter pokritie divana: ";
     cin >> pokritie_;
     cout << endl;
 
@@ -134,20 +133,7 @@ int main()
     div.print();
     cout << endl;
 
-    cout << "Vvedite 1, chtobi vvesti dannie shkafa;" << endl;
-    cout << "Vvedite 2, chtobi vvesti dannie stellaga;" << endl;
-    cout << "Vvedite 3, chtobi vvesti dannie stola;" << endl;
-    cout << "Vvedite 4, chtobi vvesti dannie divana;" << endl;
-    cout << "Vvedite 5, zavershit` rabotu programmi." << endl;
 
-    cout <<"Vvodite: ";
-    cin >> vibor;
-    cout << endl;
-    //goto a;
-}
-    case 5:{
-    cout << "Do svidaniya!";
-    return 0;
 }
 }
 }
