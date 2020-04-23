@@ -1,12 +1,12 @@
 #include "shkaf.h"
 
-shkaf::shkaf(string name_, int size_, string color_, string material_, int polki_):mebel(name_, size_, color_, material_){
-    if(!SetPolki(polki_))
-    polki = 0;
+shkaf::shkaf(string name_, int size_, string color_, string material_, int shelf_):mebel(name_, size_, color_, material_){
+    if(!SetShelf(shelf_))
+    shelf = 0;
 }
 
 shkaf::shkaf(){
-    polki = 0;
+    shelf = 0;
 }
 
 shkaf::shkaf(const shkaf &p){
@@ -14,25 +14,25 @@ shkaf::shkaf(const shkaf &p){
     size = p.size;
     color = p.color;
     material = p.material;
-    polki = p.polki;
+    shelf = p.shelf;
 }
 
-bool shkaf::SetPolki(int polki_){
-    if (polki_ < 0)
+bool shkaf::SetShelf(int shelf_){
+    if (shelf_ < 0)
     return false;
     else
-    polki = polki_;
+    shelf = shelf_;
     return true;
 }
 
 int shkaf::GetPolki() const{
-    return polki;
+    return shelf;
 }
 
 void shkaf::print() const{
-cout << "Nazvanie: " << name << endl;
-cout << "Razmer: " << size << endl;
-cout << "Cvet: " << color << endl;
+cout << "Name: " << name << endl;
+cout << "Size: " << size << endl;
+cout << "Color: " << color << endl;
 cout << "Material: " << material << endl;
-cout << "Polki: " << polki << endl;
+cout << "Shelf: " << shelf << endl;
 }
