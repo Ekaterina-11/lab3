@@ -17,9 +17,9 @@ string divan::GetPokritie() const{
 }
 
 void divan::print() const{
-cout << "Nazvanie: " << name << endl;
-cout << "Razmer: " << size << endl;
-cout << "Cvet: " << color << endl;
+cout << "Name: " << name << endl;
+cout << "Size: " << size << endl;
+cout << "Color: " << color << endl;
 cout << "Material: " << material << endl;
 cout << "Pokritie: " << pokritie << endl;
 }
