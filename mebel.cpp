@@ -6,7 +6,7 @@ mebel::mebel(string name_, int size_, string color_, string material_):izdelie(n
 
 mebel::mebel()
 {
-	material = "dub";
+	material = "";
 }
 
 void mebel::SetMaterial(string material_)
