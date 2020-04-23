@@ -1,12 +1,12 @@
 #include "stellage.h"
 
-stellage::stellage(string name_, int size_, string color_, string material_, int kolsec_):mebel(name_, size_, color_, material_){
-    if(!SetKolsec(kolsec_))
-    kolsec = 0;
+stellage::stellage(string name_, int size_, string color_, string material_, int sections_):mebel(name_, size_, color_, material_){
+    if(!SetSections(sections_))
+    sections = 0;
 }
 
 stellage::stellage(){
-    kolsec = 0;
+    sections = 0;
 }
 
 stellage::stellage(const stellage &p){
@@ -14,25 +14,25 @@ stellage::stellage(const stellage &p){
     size = p.size;
     color = p.color;
     material = p.material;
-    kolsec = p.kolsec;
+    sections = p.sections;
 }
 
-bool stellage::SetKolsec(int kolsec_){
-    if (kolsec_ < 0)
+bool stellage::SetSections(int sections_){
+    if (sections_ < 0)
     return false;
     else
-    kolsec = kolsec_;
+    sections = sections_;
     return true;
 }
 
-int stellage::GetKolsec() const{
-    return kolsec;
+int stellage::GetSections() const{
+    return sections;
 }
 
 void stellage::print() const{
-cout << "Nazvanie: " << name << endl;
-cout << "Razmer: " << size << endl;
-cout << "Cvet: " << color << endl;
+cout << "Name: " << name << endl;
+cout << "Size: " << size << endl;
+cout << "Color: " << color << endl;
 cout << "Material: " << material << endl;
-cout << "Kolichestvo sekciy: " << kolsec << endl;
+cout << "Number of sections: " << sections << endl;
 }
