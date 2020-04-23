@@ -11,8 +11,8 @@ stol::stol(const stol &p){
 }
 
 void stol::print() const{
-cout << "Nazvanie: " << name << endl;
-cout << "Razmer: " << size << endl;
-cout << "Cvet: " << color << endl;
+cout << "Name: " << name << endl;
+cout << "Size: " << size << endl;
+cout << "Colour: " << color << endl;
 cout << "Material: " << material << endl;
 }
